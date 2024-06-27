@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 let routes= [
-    {path: '/', name: 'home', component: () => import('@/components/home.vue')},
-    {path: '/hello', name: 'HelloWorld', component: () => import('@/components/HelloWorld.vue')},
+    {path: '/', name: 'index', component: () => import('..//views/home/index.vue')},
+    {path: '/index', name: 'home', component: () => import('../views/home/index.vue')},
+    {path: '/hello', name: 'HelloWorld', component: () => import('../views/home/Hello.vue')},
 ]
 // 路由
 const router = createRouter({

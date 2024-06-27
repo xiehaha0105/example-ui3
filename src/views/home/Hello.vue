@@ -1,6 +1,4 @@
 <template>
-  <h1>{{ msg }}</h1>
-
   <div class="card">
     <button type="button" @click="countOpHandel">count is {{ count }}</button>
     <button type="button" @click="countOpHandel2">count is {{ count }}</button>
@@ -12,6 +10,7 @@
 import { ref, onMounted, watch  } from 'vue'
 import {useUserStore} from "@/store/useUserStore.js";
 
+//父组件传的元素
 defineProps({
   msg: String,
 })

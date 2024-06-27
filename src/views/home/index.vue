@@ -3,7 +3,14 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import { testCache } from "@/api/api.ts";
 
+onMounted(() => {
+  testCache("P0001").then(res => {
+    console.log(res)
+  })
+})
 </script>
 
 <style scoped>
