@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "noImplicitAny": false,
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -23,8 +27,4 @@
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "baseUrl": ".",
-  "paths": {
-    "@/*": ["src/*"]
-  }
 }

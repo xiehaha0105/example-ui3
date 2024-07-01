@@ -2,6 +2,7 @@
   <el-tabs v-model="activeName" class="demo-tabs" @tab-change="handleChange">
     <el-tab-pane label="首页" name="/"></el-tab-pane>
     <el-tab-pane label="页面一" name="/hello"></el-tab-pane>
+    <el-tab-pane label="权限" name="/table"></el-tab-pane>
   </el-tabs>
 </template>
 

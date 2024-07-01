@@ -6,12 +6,12 @@
 
 <script setup lang="ts">
 import {onMounted} from 'vue'
-import {testCache} from "@/api/api.ts";
+// import {testCache} from "@/api/api.ts";
 
 onMounted(() => {
-  testCache("P0001").then(res => {
-    console.log(res)
-  })
+  // testCache("P0001").then(res => {
+  //   console.log(res)
+  // })
 })
 </script>
 
